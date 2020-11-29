@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body style="background-color:bisque;"></body>
+<body>   
+<center>
+<h1><font color="teal">Transporte público: Rutas</font></h1> 
+    <div class="container">
+        <form id="form1">
+            <h3><font color="purple">Ruta</font></h3>
+            <input type="text" id="nombre" placeholder="Nombre de la ruta"/>
+            <br>
+            <br>
+            <input type="number" id="minutos" placeholder="Minutos ruta"/>
+            <br>
+            <br>
+            <input type="button" value="Agregar ruta" id="botonAgregar" style="background-color: aquamarine;">
+            <br>
+            <br>
+            <h3><font color="purple">Buscar ruta</font></h3>
+            <input type="text" id="buscarBase" placeholder="Nombre ruta"/>
+            <br>
+            <br>
+            <input type="button" id="botonBuscar" value="Buscar ruta" style="background-color: aquamarine;"/>
+            <br>
+            <br>
+            <h3><font color="purple">Borrar ruta</font></h3>
+            <input type="text" id="borrarBase" placeholder="Nombre ruta"/>
+            <br>
+            <br>
+            <input type="button" id="botonBorrar" value="Borrar ruta" style="background-color: aquamarine;" />
+            <br>
+            <br>
+            <h3><font color="purple">Listar rutas</font></h3>
+            <input type="button" id="botonListar" value="Listar ruta" style="background-color: aquamarine;" />
+            <br>
+            <br>
+        </form>
+        <form id="form2"> 
+            <h3><font color="purple">Recorrido</font></h3>
+            <input type="text" id="baseInicio" placeholder="Nombre de la ruta" />
+            <br>
+            <br>
+            <p>Solo se logró hacerlo en minutos :c</p>
+            <input type="number" id="minutosInicio" placeholder="Minutos Inicio" />
+            <br>
+            <br>
+            <input type="number" id="minutosFin" placeholder="Minutos Fin" />
+            <br>
+            <br>
+            <input type="button" id="botonCrearR" value="Crear Recorrido" style="background-color: aquamarine;" />
+        </form>
+        <div>
+            <h3><font color="purple">Inventario de rutas</font></h3>
+            <ul id="listar" class="list-group"></ul>
+        </div>
+    </div>
+</center>   
+    <script src="main.js"></script>
+</body>
+</html>
